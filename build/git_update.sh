@@ -60,6 +60,7 @@ else
   echo "Already a tag on this commit"
 fi
 
-echo "name=git-tag" >>$NEW_TAG
+#echo "name=git-tag" >>$NEW_TAG
+echo ::set-output name=git-tag::$NEW_TAG
 
 exit 0
