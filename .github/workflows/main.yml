@@ -23,11 +23,12 @@ jobs:
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
-
+      
+      #replace with patch,minor or major depending on release
       - name: Automatic tagging of releases
         id: increment-git-tag
         run: |
-          bash ./build/git_update.sh -v patch
+          bash ./build/git_update.sh -v major
 
       - name: Build,Tag and push the image to Amazon ECR
         id: build-image
