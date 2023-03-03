@@ -1,0 +1,41 @@
+{
+        "containerDefinitions": [
+        {
+            "name": "",
+            "image": "",
+            "cpu": 1,
+            "portMappings": [],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "readonlyRootFilesystem": false
+        }
+    ],
+    "family": "kra_ecs_task",
+    "networkMode": "awsvpc",
+    "revision": 1,
+    "volumes": [],
+    "status": "ACTIVE",
+    "requiresAttributes": [
+        {
+            "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
+        },
+        {
+            "name": "ecs.capability.task-eni"
+        }
+    ],
+    "placementConstraints": [],
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "registeredAt": "2023-03-03T13:49:35.698Z",
+    "registeredBy": "arn:aws:sts::866037651620:assumed-role/adfs-npintcheckprint-dev-keckpt-app-dev/Micheal.Donald@absa.africa",
+    "tags": []
+}
