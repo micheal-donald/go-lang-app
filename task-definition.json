@@ -1,9 +1,9 @@
 {
-        "containerDefinitions": [
+    "containerDefinitions": [
         {
             "name": "nagios",
-            "image": "",
-            "cpu": 1,
+            "image": "jasonrivers/nagios:latest",
+            "cpu": 0,
             "portMappings": [],
             "essential": true,
             "environment": [],
