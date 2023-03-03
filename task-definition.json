@@ -1,7 +1,7 @@
 {
         "containerDefinitions": [
         {
-            "name": "",
+            "name": "nagios",
             "image": "",
             "cpu": 1,
             "portMappings": [],
