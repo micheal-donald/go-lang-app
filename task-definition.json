@@ -9,16 +9,7 @@
             "environment": [],
             "mountPoints": [],
             "volumesFrom": [],
-            "readonlyRootFilesystem": false,
-            "logConfiguration": {
-                "logDriver": "awslogs",
-                "options": {
-                    "awslogs-group": "kra-container",
-                    "awslogs-region": "af-south-1",
-                    "awslogs-create-group": "true",
-                    "awslogs-stream-prefix": "kra"
-                }
-            }
+            "readonlyRootFilesystem": false
         }
     ],
     "family": "kra_ecs_task",
