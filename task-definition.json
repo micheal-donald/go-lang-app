@@ -1,6 +1,5 @@
 {
     "family": "kra-go-app-task-definition",
-    "networkMode": "awsvpc",
     "cpu": "256",
     "memory": "512",
     "requiresCompatibilities": [
