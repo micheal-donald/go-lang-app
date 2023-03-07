@@ -2,9 +2,11 @@
     "family": "kra-go-app-task-definition",
     "cpu": "256",
     "memory": "512",
+    "networkMode": "awsvpc",
     "requiresCompatibilities": [
         "FARGATE"
     ],
+
     "containerDefinitions": [
         {
             "name": "kra-go-app-container",
@@ -19,5 +21,18 @@
             "essential": true,
             "readonlyRootFilesystem": false
         }
-    ]
+    ],
+
+    "networkConfiguration": {
+        "awsvpcConfiguration": {
+          "subnets": [
+            "subnet-0ddbbca3d3c731227",
+            "subnet-0756524a52ee33cc5"
+          ],
+          "securityGroups": [
+            "sg-00b35e2d8043d1927"
+          ],
+          "assignPublicIp": "DISABLED"
+        }
+    }
 }
