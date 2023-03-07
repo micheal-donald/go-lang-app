@@ -1,8 +1,12 @@
 {
     "family": "kra-go-app-task-definition",
     "networkMode": "awsvpc",
-    "cpu": 256,
-    "memoryReservation": 512,
+    "cpu": "256",
+    "memory": "512",
+    "compatibilities": [
+        "EC2",
+        "FARGATE"
+    ],
     "requiresCompatibilities": [
         "FARGATE"
     ],
