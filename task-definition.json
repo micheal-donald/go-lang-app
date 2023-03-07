@@ -1,25 +1,22 @@
 {
     "containerDefinitions": [
         {
-            "name": "kra-container",
+            "name": "kra-go-app-container",
             "image": "",
-            "cpu": 0,
-            "portMappings": [],
+            "cpu": 256,
+            "memoryReservation": 512,
+            "portMappings": [
+                {
+                  "containerPort": 80,
+                  "protocol": "tcp"
+                }],
             "essential": true,
-            "environment": [],
-            "mountPoints": [],
-            "volumesFrom": [],
             "readonlyRootFilesystem": false
         }
     ],
-    "family": "kra_ecs_task",
+    "family": "kra-go-app-task-definition",
     "networkMode": "awsvpc",
-    "volumes": [],
-    "placementConstraints": [],
     "requiresCompatibilities": [
         "FARGATE"
-    ],
-    "cpu": "512",
-    "memory": "1024",
-    "tags": []
+    ]
 }
