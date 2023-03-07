@@ -11,8 +11,8 @@
         {
             "name": "kra-go-app-container",
             "image": "",
-            "cpu": 256,
-            "memoryReservation": 512,
+            "cpu": 512,
+            "memoryReservation": 1024,
             "portMappings": [
                 {
                   "containerPort": 80,
