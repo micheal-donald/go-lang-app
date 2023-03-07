@@ -21,18 +21,5 @@
             "essential": true,
             "readonlyRootFilesystem": false
         }
-    ],
-
-    "networkConfiguration": {
-        "awsvpcConfiguration": {
-          "subnets": [
-            "subnet-0ddbbca3d3c731227",
-            "subnet-0756524a52ee33cc5"
-          ],
-          "securityGroups": [
-            "sg-00b35e2d8043d1927"
-          ],
-          "assignPublicIp": "DISABLED"
-        }
-    }
+    ]
 }
