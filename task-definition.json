@@ -1,4 +1,11 @@
 {
+    "family": "kra-go-app-task-definition",
+    "networkMode": "awsvpc",
+    "cpu": 256,
+    "memoryReservation": 512,
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
     "containerDefinitions": [
         {
             "name": "kra-go-app-container",
@@ -13,10 +20,5 @@
             "essential": true,
             "readonlyRootFilesystem": false
         }
-    ],
-    "family": "kra-go-app-task-definition",
-    "networkMode": "awsvpc",
-    "requiresCompatibilities": [
-        "FARGATE"
     ]
 }
