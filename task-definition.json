@@ -1,5 +1,6 @@
 {
     "family": "kra-go-app-task-definition",
+    "executionRoleArn": "arn:aws:iam::866037651620:role/ecsTaskExecutionRole",
     "cpu": "1024",
     "memory": "2048",
     "networkMode": "awsvpc",
