@@ -1,6 +1,6 @@
 {
     "family": "kra-go-app-task-definition",
-    "executionRoleArn": "arn:aws:iam::866037651620:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::866037651620:role/adfs-npintcheckprint-dev-keckpt-app-dev",
     "cpu": "1024",
     "memory": "2048",
     "networkMode": "awsvpc",
